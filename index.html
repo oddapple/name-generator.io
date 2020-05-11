@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <h2>Name generator</h2>
+
+        
+        <div class="input-group mb-3" id="genderOption">
+            
+
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Choose a name category</label>
+                </div>
+            
+                
+            
+                <select class="custom-select" id="gender">
+                    <option value="female">Feminine</option>
+                    <option value="male">Masculine</option>
+                    <option value="genderNetural" selected>Neutral</option>
+                </select>
+            
+        
+        </div>
+
+
+
+        
+
+            
+            
+
+        <div class="input-group mb-3">
+
+            <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2" id="nameLine" style="height:52px">
+
+            <div class="input-group-append">
+                <button class="btn btn-light btn-lg" type="button" onclick="fillNameLine()" id="button">Generate</button>
+            </div>
+
+        </div>
+
+
+        <div id="changedOrigNameGroup" class="input-group" style="display: none;">
+        
+            <div class="input-group-prepend">
+                <span class="input-group-text" style="height:38px">Your new name is:</span>
+            </div>
+
+                <input id="changedOrigName" type="text"  class="form-control mb-3" aria-label="Recipient's username" aria-describedby="button-addon2">
+            
+        </div>
+   
+
+
+    
+    <div class="row">
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="check" id="modifyCheck" onclick="onlyOne(this)">
+            <label class="custom-control-label" for="modifyCheck">Modify random name</label>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="check" id="modifyMyOwnNameCheck" onclick="onlyOne(this)">
+            <label class="custom-control-label" for="modifyMyOwnNameCheck">Modify a specific name</label>
+        </div>
+    </div>
+
+    
+</div>
+
+    
+
+    
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="name-base.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

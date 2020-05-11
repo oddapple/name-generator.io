@@ -1,0 +1,30 @@
+body{
+background-image: linear-gradient(to bottom right, #27a5ee, #ff6e7f);
+
+}
+
+.container {
+background-color: rgba(white, white,white, 1);
+}
+
+h2 {
+    color: whitesmoke;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.btn-light {
+    background-color: rgb(235, 232, 238);
+    border-color: rgb(212, 208, 216);
+}
+
+
+
+
+.custom-control-label{
+    margin-left: 15px;
+
+}
