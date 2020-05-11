@@ -60,7 +60,7 @@ function fillNameLine() {
     || pattern2.test(document.getElementById('nameLine').value)
     || pattern3.test(document.getElementById('nameLine').value)
     ){
-    alert("No latin, no numbers, no bullshit. Don't fuck around kiddo.")
+    alert("No cyrillic, no numbers, no bullshit. Don't fuck around kiddo.")
     } 
     else {
 
